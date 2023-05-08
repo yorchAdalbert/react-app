@@ -1,17 +1,19 @@
 import { useState } from 'react'
 
+const colorNames = [
+  'Aquamarine', 'BlueViolet', 'Chartreuse', 'CornflowerBlue', 'Thistle', 
+  'SpringGreen', 'SaddleBrown', 'PapayaWhip', 'MistyRose'
+];
+
 function ColorBox() {
-  const [color, setColor] = useState('Blue')
+  const [color, setColor] = useState('Tomato')
 
   const divStyle = {backgroundColor: color, hight: '500px'}
 
   return (
     <div style={divStyle}>
       <h2>The color is {color}</h2>
-      <button onClick={() => setColor('Aquamarine')}>Aquamarine</button>
-      <button onClick={() => setColor('BlueViolet')}>BlueViolet</button>
-      <button onClick={() => setColor('Chartreuse')}>Chartreuse</button>
-      <button onClick={() => setColor('CornflowerBlue')}>CornflowerBlue</button>
+      { colorNames.map(colorName => <button onClick={() => setColor(colorName)} key={colorName}>{colorName}</button>) }
     </div>
   )
 }
