@@ -3,6 +3,8 @@ import Message from './components/Message'
 import Button from './components/Button'
 import ButtonAlert from './components/ButtonAlert'
 import ColorBox from './components/ColorBox'
+import PhoneInput from './components/PhoneInput'
+import CountButton from './components/CountButton'
 // import './App.css'
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
       <Button />
       <ButtonAlert />
       <ColorBox />
+      <PhoneInput />
+      <CountButton />
     </div>
   )
 }
