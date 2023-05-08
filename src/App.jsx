@@ -2,6 +2,7 @@ import Header from './components/Header'
 import Message from './components/Message'
 import Button from './components/Button'
 import ButtonAlert from './components/ButtonAlert'
+import ColorBox from './components/ColorBox'
 // import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Message />
       <Button />
       <ButtonAlert />
+      <ColorBox />
     </div>
   )
 }
