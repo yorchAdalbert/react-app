@@ -6,6 +6,7 @@ import ColorBox from './components/ColorBox'
 import PhoneInput from './components/PhoneInput'
 import CountButton from './components/CountButton'
 import QuizNavBar from './components/QuizNavBar'
+import EditProfile from './components/EditProfile'
 // import './App.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <PhoneInput />
       <CountButton />
       <QuizNavBar />
+      <EditProfile />
     </div>
   )
 }
